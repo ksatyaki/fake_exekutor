@@ -5,7 +5,7 @@
  *      Author: ace
  */
 
-#include "/home/ace/chittaranjan_ros/catkin_ws3/src/fake_exekutor/include/fake_exekutor.h"
+#include "fake_exekutor.h"
 
 namespace exekutor {
 
@@ -18,8 +18,8 @@ FakeExekutor::FakeExekutor(std::string robot_name, std::string action_name):
 
 void FakeExekutor::actionThread()
 {
-	printf("Hello, fake exekutor was called");
-	sleep(5);
+	printf("Hello, %s, %s exekutor was called.", robot_name_.c_str(), action_name_.c_str());
+	sleep(2);
 	setState(COMPLETED);
 }
 
@@ -28,12 +28,12 @@ FakeExekutor::~FakeExekutor() {
 }
 
 } /* namespace exekutor */
-
-int main(int argn, char* args[])
-{
-	ros::init(argn, args, "fake_exekutor");
-	peiskmt_initialize(&argn, args);
-	exekutor::FakeExekutor fake_1 ("NoDoro", "FakeAction");
-
-	exekutor::ActionExekutor::waitForLink();
-}
+//
+//int main(int argn, char* args[])
+//{
+//	ros::init(argn, args, "fake_exekutor");
+//	peiskmt_initialize(&argn, args);
+//	exekutor::FakeExekutor fake_1 ("doro", "finduser");
+//
+//	exekutor::ActionExekutor::waitForLink();
+//}
