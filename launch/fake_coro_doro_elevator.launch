@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+	<!-- Coro Exekutor -->
+	<node name="coro_exekutor_fake" pkg="fake_exekutor" type="fake_coro" args="--peis-id 998"/>
+	<node name="lift_exekutor_fake" pkg="fake_exekutor" type="fake_elevator" args="--peis-id 996"/>
+	<node name="doro_exekutor_fake" pkg="fake_exekutor" type="fake_doro" args="--peis-id 999" />	
+</launch>	
