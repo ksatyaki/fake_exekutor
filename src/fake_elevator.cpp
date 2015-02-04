@@ -5,8 +5,8 @@ int main(int argn, char* args[])
 	peiskmt_initialize(&argn, args);
 	ros::init(argn, args, "fake_elevator_node");
 
-	exekutor::FakeExekutor door("lift", "door");
-	exekutor::FakeExekutor moveto("lift", "moveto");
+	exekutor::FakeExekutor door("elevator", "door");
+	exekutor::FakeExekutor moveto("elevator", "moveto");
 
 	exekutor::ActionExekutor::waitForLink();
 
