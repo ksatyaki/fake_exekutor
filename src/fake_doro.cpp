@@ -13,7 +13,10 @@ int main(int argn, char* args[])
 	exekutor::FakeExekutor moveithand("doro", "moveithand");
 	exekutor::FakeExekutor movehand("doro", "movehand");
 	exekutor::FakeExekutor fiddle("doro", "fiddle");
-
+	exekutor::FakeExekutor moveto("doro", "moveto");
+	exekutor::FakeExekutor finduser("doro", "finduser");
+	exekutor::FakeExekutor handover ("doro", "handover");
+	exekutor::FakeExekutor putdown ("doro", "putdown");
 	exekutor::ActionExekutor::waitForLink();
 
 	return 0;

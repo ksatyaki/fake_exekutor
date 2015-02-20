@@ -22,6 +22,7 @@ add_library(fake_exekutor src/fake_exekutor.cpp)
 add_executable(fake_elevator src/fake_elevator.cpp)
 add_executable(fake_doro src/fake_doro.cpp)
 add_executable(fake_coro src/fake_coro.cpp)
+add_executable(fake_dustcart src/fake_dustcart.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(fake_exekutor
@@ -44,5 +45,11 @@ target_link_libraries(fake_doro
   ${catkin_LIBRARIES}
   fake_exekutor
   peiskernel_mt
+)
+
+target_link_libraries (fake_dustcart
+	${catkin_LIBRARIES}
+	fake_exekutor
+	peiskernel_mt
 )
 
