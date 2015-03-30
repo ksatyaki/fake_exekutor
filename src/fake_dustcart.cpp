@@ -8,8 +8,7 @@ int main(int argn, char* args[])
 	exekutor::FakeExekutor loadmap("dustcart", "dock");
 	exekutor::FakeExekutor moveto("dustcart", "moveto");
 	exekutor::FakeExekutor miradock("dustcart", "bin");
-
+	exekutor::FakeExekutor stargui("dustcart", "startgui");
 	exekutor::ActionExekutor::waitForLink();
-
 	return 0;
 }
