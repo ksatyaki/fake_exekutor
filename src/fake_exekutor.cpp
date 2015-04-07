@@ -19,7 +19,7 @@ FakeExekutor::FakeExekutor(std::string robot_name, std::string action_name):
 void FakeExekutor::actionThread()
 {
 	printf("Hello, %s, %s exekutor was called.", robot_name_.c_str(), action_name_.c_str());
-	sleep(2);
+	sleep(4);
 	setState(COMPLETED);
 }
 
