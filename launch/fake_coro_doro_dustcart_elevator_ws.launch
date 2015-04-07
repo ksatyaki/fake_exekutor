@@ -5,4 +5,5 @@
 	<node name="lift_exekutor_fake" pkg="fake_exekutor" type="fake_elevator" args="--peis-id 996"/>
 	<node name="doro_exekutor_fake" pkg="fake_exekutor" type="fake_doro" args="--peis-id 999" />	
 	<node name="dustcart_exekutor_fake" pkg="fake_exekutor" type="fake_dustcart" args="--peis-id 997" />
+	<node name="ws_exekutor_fake" pkg="fake_exekutor" type="fake_ws" args="--peis-id 42" />
 </launch>	

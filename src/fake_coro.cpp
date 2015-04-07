@@ -9,6 +9,7 @@ int main(int argn, char* args[])
 	exekutor::FakeExekutor moveto("coro", "moveto");
 	exekutor::FakeExekutor miradock("coro", "miradock");
 	exekutor::FakeExekutor roller ("coro", "roller");
+
 	exekutor::ActionExekutor::waitForLink();
 
 	return 0;
