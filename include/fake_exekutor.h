@@ -8,6 +8,10 @@
 #ifndef FAKE_EXEKUTOR_INCLUDE_FAKE_EXEKUTOR_H_
 #define FAKE_EXEKUTOR_INCLUDE_FAKE_EXEKUTOR_H_
 
+#include <vector>
+#include <string>
+#include <time.h>
+#include <stdlib.h>
 #include <exekutor/action_exekutor.h>
 
 namespace exekutor {
